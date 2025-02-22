@@ -1,0 +1,130 @@
+# General files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+.env.test
+
+# Python dependencies
+__pycache__/
+*.py[cod]
+*.sqlite3
+venv/
+env/
+Pipfile.lock
+poetry.lock
+
+# Django/Flask specific
+*.sqlite3
+db.sqlite3
+instance/
+config/settings/local.py
+config/settings/prod.py
+
+# Node.js / JavaScript dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.npm/
+
+# Build artifacts
+dist/
+build/
+*.out
+*.o
+*.so
+*.a
+*.lo
+*.la
+*.pyc
+*.pyo
+
+# TypeScript build files
+*.tsbuildinfo
+
+# Docker
+docker-compose.override.yml
+docker-compose.dev.yml
+docker-compose.prod.yml
+docker-compose.staging.yml
+.dockerignore
+
+# Kubernetes
+k8s/secrets.yaml
+k8s/configmap.yaml
+k8s/*.yml
+k8s/*.yaml
+
+# Coverage reports
+.coverage
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# VS Code & JetBrains IDEs
+.vscode/
+.idea/
+*.iml
+
+# MacOS & Linux system files
+*.swp
+.swo
+.swn
+~*
+*.sublime-workspace
+*.sublime-project
+
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+terraform.tfplan
+
+# CI/CD & GitHub Actions
+.github/workflows/*.lock
+.github/workflows/*.bak
+.github/workflows/*.backup
+.github/actions/cache/
+.github/actions/.cache/
+
+# Ignore local database dumps
+*.sql
+*.dump
+db-backups/
+
+# Ignore test snapshots
+__snapshots__/
+jest-debug.log
+
+# Ignore coverage reports
+coverage/
+.nyc_output/
+
+# Ignore Cypress test artifacts
+cypress/screenshots/
+cypress/videos/
+cypress/results/
+
+# Ignore Kubernetes Secrets & Configs
+secrets.yaml
+config.yaml
+configmap.yaml
